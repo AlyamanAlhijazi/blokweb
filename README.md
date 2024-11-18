@@ -40,8 +40,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagona 
-  <img src="readme-images/Home1" width="375px" alt="Home pagina">
-  <img src="readme-images/Home2" width="375px" alt="Home pagina">
+  <img src="readme-images/Home1.png" width="375px" alt="Home pagina">
+  <img src="readme-images/Home2.png" width="375px" alt="Home pagina">
   <img src="readme-images/Home3" width="375px" alt="Home pagina">
   <img src="readme-images/Home4" width="375px" alt="Home pagina">
   <img src="readme-images/Home5" width="375px" alt="Home pagina">
