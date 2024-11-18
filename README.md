@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Alyaman Alhijazi
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  rood: ik vind het leuk om te coderen en ik begrijp het wel, maar ik heb weinig tijd om te oefenen en zijprojecten te maken
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Ik ga focussen op toegankelijkheid zzodat mijn website responsive en gebruiksvriendelijk is op multiple devices schermgrootte
  
 </details>
 
@@ -36,15 +36,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+ ik ga de website koenigsegg namaken (https://www.koenigsegg.com/home)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home pagona 
+  <img src="readme-images/Home1" width="375px" alt="Home pagina">
+  <img src="readme-images/Home2" width="375px" alt="Home pagina">
+  <img src="readme-images/Home3" width="375px" alt="Home pagina">
+  <img src="readme-images/Home4" width="375px" alt="Home pagina">
+  <img src="readme-images/Home5" width="375px" alt="Home pagina">
+  <img src="readme-images/Home6" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  About us pagina
+  <img src="readme-images/About1" width="375px" alt="About us pagina">
+  <img src="readme-images/About2" width="375px" alt="About us pagina">
+  <img src="readme-images/About3" width="375px" alt="About us pagina">
+  <img src="readme-images/About4" width="375px" alt="About us pagina">
+  <img src="readme-images/About5" width="375px" alt="About us pagina">
+  <img src="readme-images/About6" width="375px" alt="About us pagina">
+  <img src="readme-images/About7" width="375px" alt="About us pagina">
  
 </details>
 
