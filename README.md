@@ -39,23 +39,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  ik ga de website koenigsegg namaken (https://www.koenigsegg.com/home)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagona 
+  Home pagina 
   <img src="readme-images/Home1.png" width="375px" alt="Home pagina">
   <img src="readme-images/Home2.png" width="375px" alt="Home pagina">
-  <img src="readme-images/Home3" width="375px" alt="Home pagina">
-  <img src="readme-images/Home4" width="375px" alt="Home pagina">
-  <img src="readme-images/Home5" width="375px" alt="Home pagina">
-  <img src="readme-images/Home6" width="375px" alt="Home pagina">
+  <img src="readme-images/Home3.png" width="375px" alt="Home pagina">
+  <img src="readme-images/Home4.png" width="375px" alt="Home pagina">
+  <img src="readme-images/Home5.png" width="375px" alt="Home pagina">
+  <img src="readme-images/Home6.png" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   About us pagina
-  <img src="readme-images/About1" width="375px" alt="About us pagina">
-  <img src="readme-images/About2" width="375px" alt="About us pagina">
-  <img src="readme-images/About3" width="375px" alt="About us pagina">
-  <img src="readme-images/About4" width="375px" alt="About us pagina">
-  <img src="readme-images/About5" width="375px" alt="About us pagina">
-  <img src="readme-images/About6" width="375px" alt="About us pagina">
-  <img src="readme-images/About7" width="375px" alt="About us pagina">
+  <img src="readme-images/About1.png" width="375px" alt="About us pagina">
+  <img src="readme-images/About2.png" width="375px" alt="About us pagina">
+  <img src="readme-images/About3.png" width="375px" alt="About us pagina">
+  <img src="readme-images/About4.png" width="375px" alt="About us pagina">
+  <img src="readme-images/About5.png" width="375px" alt="About us pagina">
+  <img src="readme-images/About6.png" width="375px" alt="About us pagina">
+  <img src="readme-images/About7.png" width="375px" alt="About us pagina">
  
 </details>
 
