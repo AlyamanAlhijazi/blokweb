@@ -40,6 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
+
   <img src="readme-images/Home1.png" width="375px" alt="Home pagina">
   <img src="readme-images/Home2.png" width="375px" alt="Home pagina">
   <img src="readme-images/Home3.png" width="375px" alt="Home pagina">
@@ -49,6 +50,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   About us pagina
+
   <img src="readme-images/About1.png" width="375px" alt="About us pagina">
   <img src="readme-images/About2.png" width="375px" alt="About us pagina">
   <img src="readme-images/About3.png" width="375px" alt="About us pagina">
@@ -68,6 +70,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  ## wat goed gaat:
+   * 
+
+  ## wat niet toegankelijk is
+  * De burger menu is onbereikbaar met een screenreader
+  * Body navigatie is onbereikbaar 
+  * Alt text wordt niet geezen (waarschijnlijk niet gedefineerd)
+  * De meeste shortcuts zoals next link, next list en next paragraph werken niet (items niet te vinden)
+  * de basics zijn er niet eigenlijk 
+
+  ## contrast:
+  * de contrast ratio tussen tekst en achtergrond is 21, omdat het een zwarte tekst is op een witte achtergrond.
 
 </details>
 
@@ -79,13 +93,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/koenigsegg-breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
