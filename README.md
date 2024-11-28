@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details close>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -65,20 +65,63 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  ## wat goed gaat:
-   * 
+  #### content:
+  * soms worden er uidrukkingen en moeilijk worden gebruikt zoals " delivering on a singular vision".
+  * Buttons, a en label elementen hebben geen unike uitleg, de meeste zijn "discover more".
+  * zij gebruiken left aligned tekst voor LTR language (english).
+  #### global code:
+  * er wordt een "lang" atribute gebruikt.
+  * iedere pagina heeft een unieke title.
+  * viewpoort is aan en tekst kan tot 5x vergroot worden.
+  * landmarks zoals nav worden gebruikt maar zijn binnen div"s en kunnen niet geselecteerd worden met een screenreader.
+  #### keyboard
+  * focus is zichtbaar en je kunt makkelijk zien waar je bent op een pagina met een screenreader.
+  * focus is niet zichtbaar op niet focus elementen zoals de dropdown menu.
+  #### images
+  * images hebben een alt tekst maar gebruikt geen menselijk taal.
+  #### headings
+  * er worden headings gebruikt met nette structuur.
+  * er wordt maar een h1 gebruikt op iedere pagina.
+  #### lists
+  * er worden list gebruikt waar nodig is.
+  #### controils
+  * er worden geen a attributes gebruikt voor links.
+  * links zijn niet herkenbaar als links maar als buttons.
+  * vaak spans en divs en daarin worden de links gegooid.
+  * er worden button elementen gebruikt voor buttons.
+  er worden links gebruikt dat in een nieuwe window geopened worden maar zonder dat dat gecomuniceerd wordt.
+  #### wat goed gaat:
+  * zij gebruiken left aligned tekst voor LTR language (english).
+  * er wordt een "lang" atribute gebruikt.
+  * iedere pagina heeft een unieke title.
+  * viewpoort is aan en tekst kan tot 5x vergroot worden.
+  * focus is zichtbaar en je kunt makkelijk zien waar je bent op een pagina met een screenreader.
+  * focus is niet zichtbaar op niet focus elementen zoals de dropdown menu.
+  * images hebben een alt tekst maar gebruikt geen menselijk taal.
+  * er worden headings gebruikt met nette structuur.
+  * er wordt maar een h1 gebruikt op iedere pagina.
+  * er worden list gebruikt waar nodig is.
+  * er worden button elementen gebruikt voor buttons.
 
-  ## wat niet toegankelijk is
-  * De burger menu is onbereikbaar met een screenreader
-  * Body navigatie is onbereikbaar 
-  * Alt text wordt niet geezen (waarschijnlijk niet gedefineerd)
-  * De meeste shortcuts zoals next link, next list en next paragraph werken niet (items niet te vinden)
-  * de basics zijn er niet eigenlijk 
+  #### wat niet toegankelijk is
+  * soms worden er uidrukkingen en moeilijk worden gebruikt zoals " delivering on a singular vision".
+  * Buttons, a en label elementen hebben geen unike uitleg, de meeste zijn "discover more".
+  * De burger menu is onbereikbaar met een screenreader.
+  * Body navigatie is onbereikbaar .
+  * De meeste shortcuts zoals next link, next list en next paragraph werken niet (items niet te vinden).
+  * landmarks zoals nav worden gebruikt maar zijn binnen div"s en kunnen niet geselecteerd worden met een screenreader.
+  * de basics zijn er niet eigenlijk .
+  * images hebben een alt tekst maar gebruikt geen menselijk taal.
+  * er worden geen a attributes gebruikt voor links.
+  * links zijn niet herkenbaar als links maar als buttons.
+  * vaak spans en divs en daarin worden de links gegooid.
+  * er worden button elementen gebruikt voor buttons.
+  er worden links gebruikt dat in een nieuwe window geopened worden maar zonder dat dat gecomuniceerd wordt.
 
   ## contrast:
   * de contrast ratio tussen tekst en achtergrond is 21, omdat het een zwarte tekst is op een witte achtergrond.
@@ -129,10 +172,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Een button gebruiken voor de burger menu
+  - Geen externe link gebruiken voor de svg's (ook in het logo niet)
+  - Focus eeerst op de html, css, js en op het eind de animaties van de buttons
+  - gebruik svg's voor de de pijltjes
+  - maak gebruik van borders voor het animeren van de buttons
+  - een uitgebreide toegankelijkheid test (loop de checklist na)
+  - image compress voor duurzaamheid 
 
 </details>
 
@@ -152,11 +198,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  |Alyaman      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Video tag youtube embeded | en dit             | en ik dit    | en dan ik dat    |
+  | wat is tabindex en autofocus?| dit als er tijd is | nog een punt | dit wil ik zeker |
+  | time out?    | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
