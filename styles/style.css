@@ -3,9 +3,29 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+@font-face{
+	font-family: 'koenigseggHeadings';
+	font-weight: 400;
+	src: url('assets/fonts/koenigseggheadings-webfont.woff2') format('woff2'),
+	     url('assets/fonts/koenigseggheadings-webfont.woff') format('woff');
 }
 
+@font-face{
+	font-family: 'baselGrotesk';
+	font-weight: 400;
+	src: url('assets/fonts/BaseGrotesk-Regular.woff2') format('woff2');
+}
 
+@font-face{
+	font-family: 'gustavo';
+	font-weight: 500;
+	src: url('Users/jmano/Documents/GitHub/basiswebsite/assets/fonts/gustavo_trial-medium-bf65f254e1e1a08-webfont.woff2') format('woff2'),
+	     url('Users/jmano/Documents/GitHub/basiswebsite/assets/fonts/gustavo_trial-medium-bf65f254e1e1a08-webfont.woff') format('woff');
+}
 
 
 
@@ -18,6 +38,10 @@
 	--color-text:#111;
 	--color-background:#eee;
 	--color-secundairy:#687c7b;
+	--color-gray: #999999; 
+	--color-arrow:#eee;
+	--color-border: #e7b200;
+	--header-height: 7em;
 }
 
 
@@ -29,44 +53,480 @@
 /****************/
 
 /* jouw code */
-body{
-	margin:0;
+@media (max-width:480px){
+	body{
+		font-size: 1rem;
+	}
+	header{flex-direction: column;
+	}
 }
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+h1 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+
+
+/* ************** */
+/* header styling */
+/* ************** */
+
 header{
 	background-color: var(--color-secundairy);
-
-	position: sticky;
+	text-transform: uppercase;
+	height: var(--header-height);
+	padding: 1em 1em;
+	width: 100%;
 	top: 0;
-	z-index: 10;
+	position: fixed;
+    z-index: 10;
 
-	display:flex;
-	flex-wrap: wrap;
-	justify-content:space-between;
-}
-
-header a{
-	display: block;
-	width: 2em;
-	font-weight: 1000;
-	line-height: 1em;
-	text-decoration: none;
-	color: var(--color-background);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:flex-end;
 }
 
 header nav{
-	flex-grow: 1;
-
+	padding-right: 5%;
 }
 
 header nav ul{
+    list-style: none;
+}
+
+header a{
+	color: var(--color-background);
+	text-decoration: none;
+}
+
+header > a{
+	display: inline-flex;
+	align-items: center;
+
+	color: var(--color-background);
+	padding-left: 5%;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-decoration: none;
+	gap: 0.5em;
+}
+
+header > a svg{
+	height: 2em;
+	order: -1;
+}
+
+/* **************** */
+/* buttons styling */
+/* **************** */
+button{
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background: none;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	position: relative;
+	padding: 10px ;
+}
+
+button span{
+	position: relative;
+	z-index: 2;
+	color: var(--color-background);
+} 
+
+
+button .svg-arrow{
+	position: relative;
+	z-index: 2;
+	height: 1.5em;
+	padding-left: 10px;
+	stroke: var(--color-background);
+    animation: none;
+}
+
+button:hover .svg-arrow{
+	animation: bounce-back 300ms ease-out;
+}
+
+@keyframes bounce-back{
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	50%{
+		transform: translateX(-15px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+button .svg-background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	fill:none;
+}
+
+
+/* **************** */
+/* sections styling */
+/* **************** */
+
+main section{
 	display: flex;
-	margin:0;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/* the first section */
+/*///////////////////*/
+main > section:nth-of-type(1){
+	box-shadow: inset 0px -400px 200px -200px var(--color-text);
+}
+
+main > section:nth-of-type(1) h2{
+	position:absolute;
+	top: 20%;
+	left: 5%;
+	color: var(--color-background);
+	font-size: 5rem;
+	text-transform: uppercase;
+}
+
+main > section:nth-of-type(1) a{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	right: 10%;
+	bottom: 22%;
+	color: var(--color-background);
+	text-decoration: none;
+}
+
+main > section:nth-of-type(1) svg{
+	height: 1em;
+	padding-left: 10px;
+	stroke: var(--color-arrow);
+}
+
+main > section:nth-of-type(1) img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
+
+
+/* the second section */
+/*///////////////////*/
+section:nth-of-type(2){
+	box-shadow: inset 0px -400px 200px -200px var(--color-text), 
+	inset 0px 100px 70px -5px var(--color-text);
+}
+
+section:nth-of-type(2) section{
+	flex-grow: 1;
+}
+section:nth-of-type(2) h2{
+	position:absolute;
+	top: 5%;
+	left: 5%;
+	color: var(--color-background);
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+section:nth-of-type(2) button{
+	position: absolute;
+	top: 15%;
+	left: 15%;
+}
+
+section:nth-of-type(2) img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
+
+section:nth-of-type(2) nav{
+	position: relative;
+	width: 80%;
+	margin-top: 5%;
+	padding: 10px;
+	border-bottom: 1px solid var(--color-gray);
+	cursor: pointer;
+}
+
+section:nth-of-type(2) ul{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-start;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-
-header nav a{
-	display: block;
-
+section:nth-of-type(2) ul li{
+	position: relative;
+	margin: 0;
+	padding:0;
 }
+
+section:nth-of-type(2) nav ul li a{
+	text-decoration: none;
+	color: var(--color-gray);
+}
+
+section:nth-of-type(2) nav ul li a:hover{
+	color: var(--color-background);
+}
+
+section:nth-of-type(2) nav ul li a.active{
+	color: var(--color-background);
+}
+
+[data-tab-content] {
+	display: none;
+} 
+
+[data-tab-content].active {
+	display: block;
+}
+
+/******
+poging met :has en ::after om de border bottom van de nav tabs te animeren
+******/
+/* main section:nth-of-type(2) nav ul li:has(a.active)::after{
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	top: 0;
+	height: 10px;
+	background-color: var(--color-background);
+	z-index: 10;
+} */
+
+section:nth-of-type(2) article a{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	left: 5%;
+	bottom: 10%;
+	color: var(--color-background);
+	text-decoration: none;
+	animation: none;
+}
+
+section:nth-of-type(2) article a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -6px; 
+    width: 0; 
+    height: 2px; 
+    background: var(--color-border); 
+    transition: width 300ms ease-out; 
+}
+
+
+section:nth-of-type(2) article a:hover::after {
+    width: 100%; 
+}
+
+section:nth-of-type(2) article a svg{
+	height: 1em;
+	padding-left: 10px;
+	stroke: var(--color-arrow);
+	animation: none;
+}
+
+section:nth-of-type(2) article a:hover svg{
+	animation: bounce-back 300ms ease-out;
+}
+
+
+
+/******
+ poging met keyframes om border bottom te animeren ;(
+ *****/
+
+/* section:nth-of-type(2) article a:hover{
+	animation: border-bottom 300ms ease-out;
+}
+@keyframes border-bottom{
+	0%{
+		content:"";
+		border-bottom: 2px solid white ;
+		width: 0;
+	}
+	50%{
+		content:"";
+		border-bottom: 2px solid white ;
+		width: 50%;
+	}
+	100%{
+		content:"";
+		border-bottom: 2px solid white ;
+		width: 100%;
+	}
+} */
+
+/******
+poging met transition een border bottom te animeren voor de link
+(dit heeft niet gewerkt door het positionering van de link) 
+******/
+
+/* section:nth-of-type(2) article a::after{
+	content:"";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-text);
+	transition: width 300ms ease-out;
+}
+
+section:nth-of-type(2) article a:hover::after{
+	width: 100%;
+} */
+
+/* the third section */
+/*///////////////////*/
+section:nth-of-type(3){
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 15px;
+
+	background-color: var(--color-text);
+	color: var(--color-background);
+	height: 100vh;
+	padding-left: 5%;
+}
+
+section:nth-of-type(3) h2{
+	font-size: 1rem;
+	text-transform: uppercase;
+	align-self: start;
+	color: var(--color-background);
+	padding-top: 20%;
+}
+
+section:nth-of-type(3) h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	align-self: start;
+}
+
+section:nth-of-type(3) img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 10%;
+	align-self: end;
+}
+
+section:nth-of-type(3) p{
+	padding-right: 5%;
+}
+
+section:nth-of-type(3) button{
+	align-self: start;
+	justify-self: start;
+}
+
+
+/* the fourth section */
+section:nth-of-type(4){
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 15px;
+
+	background-color: var(--color-backgrounds);
+	color: var(--color-text);
+	height: 100vh;
+	padding-left: 5%;
+}
+
+section:nth-of-type(4) h2{
+	font-size: 1rem;
+	text-transform: uppercase;
+	align-self: start;
+	color: var(--color-text);
+	padding-top: 20%;
+}
+
+section:nth-of-type(4) h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	align-self: start;
+}
+
+section:nth-of-type(4) img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-right: 0;
+	padding-right: 20%;
+	align-self: start;
+}
+
+section:nth-of-type(4) p{
+	padding-right: 5%;
+}
+
+section:nth-of-type(4) button{
+	align-self: start;
+	justify-self: start;
+}
+
+section:nth-of-type(4) button span, section:nth-of-type(4) .svg-arrow {
+	color: var(--color-text);
+	stroke: var(--color-text);
+}
+/*///////////////////*/
+/* body{
+	margin-top: var(--header-height); 
+} */
+
+/* body{
+	font-family: 'gustavo', sans-serif;  
+} */
