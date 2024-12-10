@@ -123,7 +123,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * er worden button elementen gebruikt voor buttons.
   er worden links gebruikt dat in een nieuwe window geopened worden maar zonder dat dat gecomuniceerd wordt.
 
-  ## contrast:
+  #### contrast:
   * de contrast ratio tussen tekst en achtergrond is 21, omdat het een zwarte tekst is op een witte achtergrond.
 
 </details>
@@ -137,12 +137,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="readme-images/koenigsegg-breakdown.png" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -208,10 +202,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - makkelijk een embed code kopieren van youtube
+  - geen idee wat tabindex is
+  - buttons met z-index 100 
 
 </details>
 
@@ -225,7 +218,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
+  ## wat er verbeterd is:
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  * Buttons en links hebben een unieke uitleg.
+  * De burger menu is bereikbaar met een screenreader.
+  * Body navigatie is bereikbaar met een screen reader .
+  * landmarks kunnen geselecteerd worden.
+  * images hebben een alt tekst en worden duidelijk uitgelegt in menselijk taal.
+  * er worden a attributes gebruikt voor links.
+  * links zijn nu herkenbaar als links maar als buttons.
+  * geen links in spans en divs.
+  * er worden button elementen gebruikt voor buttons.
 
 </details>
 
@@ -272,19 +276,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/uitkomst1.png" width="375px" alt="navigatie tabs">
+  <img src="readme-images/uitkomst2.png" width="375px" alt="menu">
+  <img src="readme-images/uitkomst3.png" width="375px" alt="landing">
+  <img src="readme-images/uitkomst4.png" width="375px" alt="footer">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  * wat er heel goed ging en vond ik super nuttig is het leren positioneren met grid. ik heb bijna bij alles display:grid; gebruikt.
+  * wat er ook goed is het maken van de hamburger menu in JavaScript (na zoveel pogingen :()).
+  * het gebruik van pseudo elementen was ook heel handig.
+  * het animeren met key frames.
+  * responsive maken met media querys ging verbasend lekker, grid areas zijn heel handig
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  * ik wilde mijn hamburger menu in js maken omdat ik met JS wilde experimenteren maar ik eindigde met zoveel tutorials te kijken en dat heeft zoveel tijd gekost.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  * Ik heb heel lang geprobeerd om de path animaties van buttons werkend e krijgen maar vond ik heel lastig, overweldigend en onoverzichtelijk.(ik heb het ook vaak niet precies om de tekst heen kunnen krijgen)
+  <img src="readme-images/button.png" width="375px" alt="button achtergrond">
+
+  * in de website zijn er overal scroll animaties, ik wilde dat zo graag leren maar heb het tot het eind gelaten zodat ik op de belangrijke dingen kan consentreren en helaas kan het niet meer binnen de tijd.
+
+  * Ik heb een warning dat een section lacks heading, ik heb de visually hidden code gebruikt van w3school maar het werkte niet op dat h2 tag dus ik heb nog steeds een warning.
+
+  * ik heb geprobeerd om de border van de navigatie tabs te animeren met :has maar helaas niet gelukt
+  <img src="readme-images/has.png" width="375px" alt=":has poging">
+
+
 </details>
 
 
@@ -300,8 +319,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. visually hidden van: https://www.a11yproject.com/posts/how-to-hide-content/ 
+  2. hamburger menu van "Web Dev Simplified: https://www.youtube.com/watch?v=dAIVbLrAb_U + "Tree house" https://www.youtube.com/watch?v=aNDqzlAKmZc en daarna gecorrigeerd met chat gpt.
 
 </details>
