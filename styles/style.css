@@ -46,14 +46,12 @@
 
 
 /****************/
-/* JOUW STYLING */
+/* Algemene STYLING */
 /****************/
-
-/* jouw code */
 
 
 /* visually hidden van: https://www.a11yproject.com/posts/how-to-hide-content/ */
-h1 {
+h1, section:nth-of-type(2) > h2 {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
 	height: 1px;
@@ -61,7 +59,8 @@ h1 {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
-  }
+}
+
 
 h2, h3, h4, h5, h6 {
 	font-family: "gustavo";
@@ -79,6 +78,7 @@ h2{
 h3{
 	font-size: 0.875em;
 }
+
 
 /* ************** */
 /* header styling */
@@ -161,6 +161,7 @@ header button span{
 	transform: translateX(0);
 	overflow: scroll;
 }
+
 header nav{
 	position: fixed;
 	top: 0;
@@ -179,26 +180,12 @@ header nav{
 	transform: translatex(-100%);
 	transition: transform 300ms ease-in-out;
     z-index: 1000;
-/* 
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: var(--header-height) 2em 3em 2em;
-	background: var(--color-secundairy);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	transform: translatex(-100%);
-	transition: transform 300ms ease-in-out;
-    z-index: 1000; */
 }
 
 nav[hidden]{
 	display: none;
 }
+
 header nav ul{
     list-style: none;
 	padding: 0;
@@ -223,10 +210,6 @@ header nav ul li a{
 	color: var(--color-background);
 	text-decoration: none;
 }
-/* header > a{
-	color: var(--color-background);
-	margin-left: 2em;
-} */
 
 header > a svg{
 	height: 2.8em;
@@ -234,6 +217,9 @@ header > a svg{
 }
 
 
+/* ************** */
+/* Footer styling */
+/* ************** */
 
 footer{
 	display: grid;
@@ -251,6 +237,7 @@ footer{
 footer a{
 	font-size: .7em;
 }
+
 footer > a svg{
 	height: 5em;
 	grid-area: 1 / 1 / 2/ 2;
@@ -273,6 +260,7 @@ footer ul a svg{
 	fill: var(--color-text);
 	padding-right: 1em;
 }
+
 footer ul:nth-of-type(1){
 	grid-area: 1 / 3 / 1 / 5;
 }
@@ -285,7 +273,6 @@ footer ul:nth-of-type(2){
 footer ul:nth-of-type(3){
 	display: inline-flex;
 	grid-area: 2 / 1 / 2 / 7;
-	padding-bottom: 2px solid var(--color-gray);
 	padding-bottom: 1em;
 	border-bottom: 2px solid var(--color-gray);
 }
@@ -317,7 +304,6 @@ button{
 	background: none;
 	border: none;
 	cursor: pointer;
-	/* overflow: hidden; */
 	outline: none;
 	position: relative;
 	padding: 10px ;
@@ -362,7 +348,6 @@ main section{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	/* align-items: center; */
 	position: relative;
 	height: 100vh;
 	width: 100%;
@@ -416,7 +401,6 @@ main > section:nth-of-type(1) svg{
 	height: 1em;
 	padding-left: 10px;
 	stroke: var(--color-arrow);
-	/* animation: none; */
 }
 
 main > section:nth-of-type(1) a:hover svg {
@@ -439,8 +423,6 @@ main > section:nth-of-type(1) img{
 section:nth-of-type(2){
 	box-shadow: inset 0px -400px 200px -200px var(--color-text), 
 	inset 0px 100px 70px -5px var(--color-text);
-	border-image-source: linear-gradient( white black);
-	border-image-slice: fill 1;
 }
 
 section:nth-of-type(2) section{
@@ -818,7 +800,6 @@ section:nth-of-type(5) .svg-arrow {
 /* **************/
 /* Media querys */
 /* **************/
-
 @media (min-width: 768px){
 	
 	p, a, button {
